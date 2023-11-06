@@ -45,8 +45,8 @@ def build_article(config, args):
     
     with open(html_path, 'w') as f:
         f.write(html)
-
-    url = config["root_url"]  + html_path.replace('public/', '')
+    
+    url = config["root_url"]  + html_path[6:]
 
     with open('public/posts.json', 'r') as f:
         posts = json.load(f)
