@@ -40,7 +40,7 @@ jobs:
       - name: Setup gh-pages branch
         if: steps.check_changes.outputs.changed_files != ''
         run: |
-            git switch -C gh-pages
+            git switch -c gh-pages
             if git ls-remote --heads origin gh-pages | grep -q 'gh-pages'; then
               git config pull.rebase false
               git pull --allow-unrelated-histories origin gh-pages
