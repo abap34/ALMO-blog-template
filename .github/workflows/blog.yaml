@@ -122,6 +122,10 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: Upload artifacts
+        uses: actions/upload-pages-artifact
+        with:
+          path: public
       - name: Deploy GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
