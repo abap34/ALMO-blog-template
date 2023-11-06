@@ -45,7 +45,7 @@ def build_article(config, args):
     
     with open(html_path, 'w') as f:
         f.write(html)
-    
+
     url = config["root_url"]  + html_path[6:]
 
     with open('public/posts.json', 'r') as f:
@@ -80,13 +80,6 @@ def build_article(config, args):
     recent_posts = posts[:5]
     with open('public/recent_posts.json', 'w') as f:
         json.dump(recent_posts, f)
-
-    with open('public/posts.html', 'r') as f:
-        html = f.read()
-    
-    html = html.replace('{{blog_name}}', config["blog_name"])
-    with open('public/posts.html', 'w') as f:
-        f.write(html)
 
 
 
