@@ -101,6 +101,23 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
 
+      - name: Commit build.log
+        continue-on-error: true
+        if: steps.check_changes.outputs.changed_files != ''
+        run: |
+          cd ${{ github.workspace }}
+          git add .
+          git config pull.rebase false
+          git commit -m "Add build.log"
+        
+      - name: Push build.log
+        continue-on-error: true
+        if: steps.check_changes.outputs.changed_files != ''
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
