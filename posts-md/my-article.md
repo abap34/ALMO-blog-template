@@ -14,7 +14,7 @@ twitter_site: @abap34
 ---
 
 
-# テスト
+# Test
 
 
 This is a test article for ALMO-blog ! 
