@@ -16,8 +16,6 @@ ALMOを使ったブログ作成のテンプレートレポジトリです。
 {
   # ページのトップのURL。 https://{ユーザ名}.github.io/{レポジトリの名前} になります。
   "root_url": "https://abap34.github.io/ALMO-blog",
-  # ブログのタイトル
-  "blog_name": "abap34's blog",
   # 著者名
   "author": "abap34",
   # 著者のメールアドレス
