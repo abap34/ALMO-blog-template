@@ -133,6 +133,8 @@ jobs:
 
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@v1
+        with:
+          path: .
 
       - name: Deploy GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
