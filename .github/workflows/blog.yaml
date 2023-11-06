@@ -42,6 +42,7 @@ jobs:
         run: |
             git switch -C gh-pages
             if git ls-remote --heads origin gh-pages | grep -q 'gh-pages'; then
+            git config pull.rebase false
               git pull origin gh-pages
             fi
 
