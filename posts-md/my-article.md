@@ -14,7 +14,6 @@ twitter_site: @abap34
 ---
 
 
-
 # テスト
 
 This is a test article.
