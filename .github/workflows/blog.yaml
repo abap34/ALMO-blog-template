@@ -110,6 +110,14 @@ jobs:
         run: |
           git switch gh-pages
           git pull
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+     
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: '.'
 
       - name: Deploy GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
