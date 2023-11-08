@@ -15,7 +15,7 @@ ALMOを使ったブログ作成のテンプレートレポジトリです。
 ```
 {
   # ページのトップのURL。 https://{ユーザ名}.github.io/{レポジトリの名前} になります。
-  "root_url": "https://abap34.github.io/ALMO-blog",
+  "root_url": "https://abap34.github.io/ALMO-blog-template",
   # 著者名
   "author": "abap34",
   # 著者のメールアドレス
@@ -24,6 +24,7 @@ ALMOを使ったブログ作成のテンプレートレポジトリです。
   "twitter_id": "abap34",
   # 著者のGitHub ID
   "github_id": "abap34",
+  # これ以下のものは全て省略可能で、省略した場合 ALMO のデフォルトのものが使われます。
   # 記事全体のテーマを一括で指定。 `light` または `dark`  (ALMOの `-t` 引数と対応)
   "overall_theme": "light",
   # カスタム CSS のパス。 (ALMOの `-c` 引数と対応)
