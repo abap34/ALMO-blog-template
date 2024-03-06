@@ -43,3 +43,10 @@ ALMOを使ったブログ作成のテンプレートレポジトリです。
 3. `posts-md/my-article.md` を編集する。
 
 4. `main` ブランチにプッシュする。
+
+
+以下のようなページが表示されたら成功です。
+
+このページ自体は `index.html` を編集することでカスタマイズ可能です。
+
+![alt text](assets/index-example.png)
